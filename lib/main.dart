@@ -2,11 +2,19 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    const Center(
-      child: Text(
-        'Привет флатерщик!',
-        textDirection: TextDirection.ltr,
-        style: TextStyle(fontSize: 70),
+    MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.indigo,
+        appBar: AppBar(
+          centerTitle: true,
+          title: Text("My First App"),
+        ),
+        body: Center(
+          child: Text(
+            "This is My Homepage",
+            style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+          ),
+        ),
       ),
     ),
   );
